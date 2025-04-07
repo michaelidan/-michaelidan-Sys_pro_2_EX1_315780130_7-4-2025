@@ -73,9 +73,6 @@ void Algorithms::dfsUtil(int u, bool* visited, Graph& tree) {
 // Dijkstra's algorithm for shortest paths
 Graph Algorithms::dijkstra(int start) {
     int n = g.getNumVertices();     // Number of vertices
-    if (n == 0) {                   // Handle empty graph
-        return Graph(0);
-    }
     if (start < 0 || start >= n) {
         throw "Invalid starting vertex!";
     }
